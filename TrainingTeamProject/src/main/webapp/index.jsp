@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title>Poker Planning</title>
+<title>Poker Planning Tool</title>
 </head>
 
 <body>
