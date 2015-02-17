@@ -1,10 +1,21 @@
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
+@ManagedBean(name = "task", eager = true)
+@SessionScoped
 public class Task {
 	
 	private int idTask;
 	private String nameTask;
 	private int voteTask;
+	private int secondsRemaining;
 	
+	public int getSecondsRemaining() {
+		return secondsRemaining;
+	}
+	public void setSecondsRemaining(int secondsRemaining) {
+		this.secondsRemaining = secondsRemaining;
+	}
 	public int getIdTask() {
 		return idTask;
 	}
@@ -23,9 +34,5 @@ public class Task {
 	public void setVoteTask(int voteTask) {
 		this.voteTask = voteTask;
 	}
-	
-	
-	
-	
 
 }
