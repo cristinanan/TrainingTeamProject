@@ -2,7 +2,7 @@ package org.trainingteamproject;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-@ManagedBean(name = "task", eager = true)
+@ManagedBean(name = "task")
 @SessionScoped
 public class Task {
 	
