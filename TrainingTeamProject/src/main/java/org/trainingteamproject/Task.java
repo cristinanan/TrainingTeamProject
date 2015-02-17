@@ -1,3 +1,4 @@
+package org.trainingteamproject;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
@@ -7,6 +8,13 @@ public class Task {
 	
 	private int idTask;
 	private String nameTask;
+	private String descriptionTask;
+	public String getDescriptionTask() {
+		return descriptionTask;
+	}
+	public void setDescriptionTask(String descriptionTask) {
+		this.descriptionTask = descriptionTask;
+	}
 	private int voteTask;
 	private int secondsRemaining;
 	

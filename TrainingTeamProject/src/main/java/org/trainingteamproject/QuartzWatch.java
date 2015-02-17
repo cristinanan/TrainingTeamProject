@@ -1,3 +1,4 @@
+package org.trainingteamproject;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
@@ -8,7 +9,7 @@ import static org.quartz.JobBuilder.*;
 import static org.quartz.TriggerBuilder.*;
 import static org.quartz.SimpleScheduleBuilder.*;
 
-public class QuartzWatch{
+/*public class QuartzWatch{
 	// define the job and tie it to our HelloJob class
 	JobDetail job = newJob(HelloJob.class)
 	.withIdentity("job1", "group1")
@@ -26,3 +27,4 @@ public class QuartzWatch{
 	// Tell quartz to schedule the job using our trigger
 	scheduler.scheduleJob(job, trigger);
 }
+*/
