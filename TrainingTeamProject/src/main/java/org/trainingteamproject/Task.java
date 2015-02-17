@@ -1,48 +1,49 @@
 package org.trainingteamproject;
+
+import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 @ManagedBean(name = "task")
 @SessionScoped
-public class Task {
+public class Task implements Serializable {
 	
-	private int idTask;
-	private String nameTask;
-	private String descriptionTask;
-	private int voteTask;
+	private String taskId = "";
+	private String taskName = "";
+	private String taskDescription = "";
+	private int taskVote;
 	private int secondsRemaining;
-	
-	public String getDescriptionTask() {
-		return descriptionTask;
+	public String getTaskId() {
+		return taskId;
 	}
-	
-	public void setDescriptionTask(String descriptionTask) {
-		this.descriptionTask = descriptionTask;
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
 	}
-	
+	public String getTaskName() {
+		return taskName;
+	}
+	public void setTaskName(String taskName) {
+		this.taskName = taskName;
+	}
+	public String getTaskDescription() {
+		return taskDescription;
+	}
+	public void setTaskDescription(String taskDescription) {
+		this.taskDescription = taskDescription;
+	}
+	public int getTaskVote() {
+		return taskVote;
+	}
+	public void setTaskVote(int taskVote) {
+		this.taskVote = taskVote;
+	}
 	public int getSecondsRemaining() {
 		return secondsRemaining;
 	}
 	public void setSecondsRemaining(int secondsRemaining) {
 		this.secondsRemaining = secondsRemaining;
 	}
-	public int getIdTask() {
-		return idTask;
-	}
-	public void setIdTask(int idTask) {
-		this.idTask = idTask;
-	}
-	public String getNameTask() {
-		return nameTask;
-	}
-	public void setNameTask(String nameTask) {
-		this.nameTask = nameTask;
-	}
-	public int getVoteTask() {
-		return voteTask;
-	}
-	public void setVoteTask(int voteTask) {
-		this.voteTask = voteTask;
-	}
+	
 
 }
