@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Task Platform</title>
+</h:head>
+
+<h:body>
+	<h1>JSF 2.0 Task Platform Project</h1>
+	<br />
+	<br />
+	<div id="wrapper">
+		<div id="leftColumn">
+			<h3>
+				<h:outputText value="#task.nametask"></h:outputText>
+			</h3>
+			<p><h:outputText value="task.descriptiontask"></h></p>
+		</div>
+		
+		<div id="rightColumn">
+			<p>Choose a card:</p>
+			<table>
+				<tr>
+					<td><img src="images/1.jpg" height="180" width="126" /></td>
+					<td><img src="images/2.jpg" height="180" width="126" /></td>
+					<td><img src="images/3.jpg" height="180" width="126" /></td>
+				</tr>
+				<tr>
+					<td><img src="images/5.jpg" height="180" width="126" /></td>
+					<td><img src="images/8.jpg" height="180" width="126" /></td>
+					<td><img src="images/13.jpg" height="180" width="126" /></td>
+				</tr>
+			</table>
+			
+			<div id="showtime" style="font-size: 50px; font-weight: 800;">0
+				: 0</div>
+				
+			<button>Start Voting</button>
+			<button>Reset Voting</button>
+			
+		</div><!-- rightColumn end -->
+	</div><!-- wrapper end -->
+	
+</h:body>
+</html>

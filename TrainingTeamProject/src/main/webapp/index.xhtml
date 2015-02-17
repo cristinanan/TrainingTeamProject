@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Task Platform</title>
+</h:head>
+
+<h:body>
+	<h1>JSF 2.0 Task Platform Project</h1>
+	<br /><br />
+	<h3>Create new task</h3>
+	<h:form>
+		<h:outputLabel>Name:</h:outputLabel>
+		<h:inputText value="#{task.nameTask}"></h:inputText>
+		<h:outputLabel>Description:</h:outputLabel>
+		<h:inputTextarea value="#{task.descriptionTask}"></h:inputTextarea>
+		<h:commandButton value="Submit" action="newtask"></h:commandButton>
+	</h:form>
+	
+</h:body>
+</html>
