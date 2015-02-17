@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14242000758750" configfile="/TrainingTeamProject/src/main/webapp/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf14242032868104" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14242032868105" path="/index.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="taskview.xhtml" id="pf14242032868106" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14242032868105" path="taskview.xhtml"/>
-  <links id="pf14242032868105" target="pf14242032868106" source="pf14242032868104" outcome="newtask" redirect="true"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf142420464943510" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf142420464943511" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="newtask.xhtml" id="pf142420464943512" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf142420464943511" path="/newtask.xhtml"/>
+  <links id="pf142420464943511" target="pf142420464943512" source="pf142420464943510" outcome="newtask" redirect="true"/>
 </pageflow:Pageflow>

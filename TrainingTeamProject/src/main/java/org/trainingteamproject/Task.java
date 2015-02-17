@@ -9,14 +9,16 @@ public class Task {
 	private int idTask;
 	private String nameTask;
 	private String descriptionTask;
+	private int voteTask;
+	private int secondsRemaining;
+	
 	public String getDescriptionTask() {
 		return descriptionTask;
 	}
+	
 	public void setDescriptionTask(String descriptionTask) {
 		this.descriptionTask = descriptionTask;
 	}
-	private int voteTask;
-	private int secondsRemaining;
 	
 	public int getSecondsRemaining() {
 		return secondsRemaining;
