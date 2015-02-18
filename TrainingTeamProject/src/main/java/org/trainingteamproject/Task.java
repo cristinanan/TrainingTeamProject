@@ -9,11 +9,14 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class Task implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+	
 	private String taskId = "";
 	private String taskName = "";
 	private String taskDescription = "";
 	private int taskVote;
 	private int secondsRemaining;
+	
 	public String getTaskId() {
 		return taskId;
 	}
@@ -44,6 +47,4 @@ public class Task implements Serializable {
 	public void setSecondsRemaining(int secondsRemaining) {
 		this.secondsRemaining = secondsRemaining;
 	}
-	
-
 }
