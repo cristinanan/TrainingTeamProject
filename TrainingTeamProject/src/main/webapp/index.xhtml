@@ -7,19 +7,32 @@
 
 <h:head>
 	<title>Task Platform</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </h:head>
 
 <h:body>
 	<h1>JSF 2.0 Task Platform Project</h1>
-	<br /><br />
-	<h3>Create new task</h3>
-	<h:form>
-		<h:outputLabel>Name:</h:outputLabel>
-		<h:inputText value="#{task.taskName}"></h:inputText>
-		<h:outputLabel>Description:</h:outputLabel>
-		<h:inputTextarea value="#{task.taskDescription}"></h:inputTextarea>
-		<h:commandButton action="newtask" value="Submit"></h:commandButton>
-	</h:form>
-	
+	<br />
+	<br />
+	<div id="wrapper">
+		<div id="leftColumn">
+			<h3>Create new task</h3>
+			<h:form>
+				<h:outputLabel>Name of the task:</h:outputLabel>
+				<br />
+				<h:inputText value="#{task.taskName}"></h:inputText>
+				<br />
+				<h:outputLabel>Description (brief of the issue):</h:outputLabel>
+				<br />
+				<h:inputTextarea value="#{task.taskDescription}"></h:inputTextarea>
+				<br />
+				<h:outputLabel>Time of running the vote (in seconds):</h:outputLabel>
+				<br />
+				<h:inputText value="#{task.secondsRemaining}"></h:inputText>
+				<br />
+				<h:commandButton action="newtask" value="Submit"></h:commandButton>
+			</h:form>
+		</div>
+	</div>
 </h:body>
 </html>
